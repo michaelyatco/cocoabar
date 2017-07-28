@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/cocoabar" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/headline"/>
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="(212) 677-7417"
+        />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:padding="20dp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/contact"
+        android:text="Cocoa Bar\n21 Clinton St. 10002\nOpen Everyday\n11:30A.M.-11:00P.M." />
+
+</RelativeLayout>
